@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.3 on win32)" generated="20200415 11:45:59.210" rpa="false">
+<suite id="s1" name="DemoRobotFramework01" source="D:\HAI\Download\generalrobotframework-master\generalrobotframework-master\DemoRobotFramework01">
+<suite id="s1-s1" name="Testsuites" source="D:\HAI\Download\generalrobotframework-master\generalrobotframework-master\DemoRobotFramework01\testsuites">
+<suite id="s1-s1-s1" name="Testsuits Web" source="D:\HAI\Download\generalrobotframework-master\generalrobotframework-master\DemoRobotFramework01\testsuites\testsuits_web">
+<suite id="s1-s1-s1-s1" name="Create Account" source="D:\HAI\Download\generalrobotframework-master\generalrobotframework-master\DemoRobotFramework01\testsuites\testsuits_web\create_account">
+<suite id="s1-s1-s1-s1-s1" name="Account Testsuite Testbed" source="D:\HAI\Download\generalrobotframework-master\generalrobotframework-master\DemoRobotFramework01\testsuites\testsuits_web\create_account\account_testsuite_testbed.robot">
+<test id="s1-s1-s1-s1-s1-t1" name="ADA010 create new project - Login and create new project- WIN1">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Hello</arg>
+</arguments>
+<status status="PASS" starttime="20200415 11:45:59.423" endtime="20200415 11:45:59.424"></status>
+</kw>
+<kw name="Open Browser" library="browser_01">
+<doc>Launch web browser with ATDA server info</doc>
+<arguments>
+<arg>http://11.11.7.10/login</arg>
+</arguments>
+<msg timestamp="20200415 11:45:59.424" level="INFO">Creating driver for non Web app: ANY</msg>
+<status status="PASS" starttime="20200415 11:45:59.424" endtime="20200415 11:46:03.113"></status>
+</kw>
+<kw name="Input Username Password Login Page" library="browser_01">
+<doc>input username and password in login page</doc>
+<arguments>
+<arg>hai</arg>
+<arg>hai</arg>
+</arguments>
+<msg timestamp="20200415 11:46:03.203" level="INFO">input username in login page successfully</msg>
+<msg timestamp="20200415 11:46:03.301" level="INFO">input password successfully</msg>
+<status status="PASS" starttime="20200415 11:46:03.114" endtime="20200415 11:46:03.301"></status>
+</kw>
+<kw name="Click Login Button" library="browser_01">
+<doc>click login button</doc>
+<msg timestamp="20200415 11:46:03.302" level="INFO">start function navigate to create account page</msg>
+<msg timestamp="20200415 11:46:03.370" level="INFO">click login button successfully</msg>
+<status status="PASS" starttime="20200415 11:46:03.302" endtime="20200415 11:46:03.371"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200415 11:46:08.372" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200415 11:46:03.371" endtime="20200415 11:46:08.372"></status>
+</kw>
+<kw name="Click New Project Button Dash Board Page" library="browser_01">
+<doc>click new project button in dash board page</doc>
+<msg timestamp="20200415 11:46:08.373" level="INFO">start function click new button in dash board page</msg>
+<msg timestamp="20200415 11:46:08.444" level="INFO">click new project button successfully</msg>
+<status status="PASS" starttime="20200415 11:46:08.372" endtime="20200415 11:46:08.445"></status>
+</kw>
+<kw name="Input Project Name Dash Board Page" library="browser_01">
+<doc>input project name in dash board page</doc>
+<arguments>
+<arg>hai</arg>
+</arguments>
+<msg timestamp="20200415 11:46:08.445" level="INFO">start function input project name in dash board page</msg>
+<msg timestamp="20200415 11:46:08.518" level="INFO">input project name successfully</msg>
+<status status="PASS" starttime="20200415 11:46:08.445" endtime="20200415 11:46:08.518"></status>
+</kw>
+<kw name="Input Project Description Dash Board Page" library="browser_01">
+<doc>input project description in dash board page</doc>
+<arguments>
+<arg>hai</arg>
+</arguments>
+<msg timestamp="20200415 11:46:08.518" level="INFO">start function input project description in dash board page</msg>
+<msg timestamp="20200415 11:46:08.582" level="INFO">input project description successfully</msg>
+<status status="PASS" starttime="20200415 11:46:08.518" endtime="20200415 11:46:08.583"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200415 11:46:10.584" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200415 11:46:08.583" endtime="20200415 11:46:10.584"></status>
+</kw>
+<kw name="Click Cancel Project Button Dash Board Page" library="browser_01">
+<doc>click cancel create project button in dash board page</doc>
+<msg timestamp="20200415 11:46:10.585" level="INFO">start function click cancel button in dash board page</msg>
+<msg timestamp="20200415 11:46:10.650" level="INFO">click cancel project button successfully</msg>
+<status status="PASS" starttime="20200415 11:46:10.584" endtime="20200415 11:46:10.650"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200415 11:46:12.653" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200415 11:46:10.650" endtime="20200415 11:46:12.654"></status>
+</kw>
+<kw name="Add New Project Dash Board Page" library="browser_01">
+<doc>add project in dash board page</doc>
+<arguments>
+<arg>hai</arg>
+<arg>hai</arg>
+</arguments>
+<msg timestamp="20200415 11:46:12.656" level="INFO">start function add new project in dash board page</msg>
+<msg timestamp="20200415 11:46:12.705" level="INFO">click new project button successfully</msg>
+<msg timestamp="20200415 11:46:12.770" level="INFO">input project name successfully</msg>
+<msg timestamp="20200415 11:46:12.835" level="INFO">input project description successfully</msg>
+<msg timestamp="20200415 11:46:12.909" level="INFO">click create project button successfully</msg>
+<status status="PASS" starttime="20200415 11:46:12.655" endtime="20200415 11:46:12.910"></status>
+</kw>
+<kw name="Close Browser" library="browser_01">
+<doc>Close web browser</doc>
+<msg timestamp="20200415 11:46:12.910" level="INFO">Start function close_browser</msg>
+<msg timestamp="20200415 11:46:12.970" level="INFO">close_browser successfully</msg>
+<status status="PASS" starttime="20200415 11:46:12.910" endtime="20200415 11:46:12.972"></status>
+</kw>
+<status status="PASS" starttime="20200415 11:45:59.423" endtime="20200415 11:46:12.972" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200415 11:45:59.266" endtime="20200415 11:46:12.973"></status>
+</suite>
+<status status="PASS" starttime="20200415 11:45:59.264" endtime="20200415 11:46:12.975"></status>
+</suite>
+<status status="PASS" starttime="20200415 11:45:59.263" endtime="20200415 11:46:12.976"></status>
+</suite>
+<status status="PASS" starttime="20200415 11:45:59.260" endtime="20200415 11:46:12.978"></status>
+</suite>
+<status status="PASS" starttime="20200415 11:45:59.240" endtime="20200415 11:46:12.982"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="DemoRobotFramework01">DemoRobotFramework01</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Testsuites">DemoRobotFramework01.Testsuites</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="Testsuits Web">DemoRobotFramework01.Testsuites.Testsuits Web</stat>
+<stat pass="1" fail="0" id="s1-s1-s1-s1" name="Create Account">DemoRobotFramework01.Testsuites.Testsuits Web.Create Account</stat>
+<stat pass="1" fail="0" id="s1-s1-s1-s1-s1" name="Account Testsuite Testbed">DemoRobotFramework01.Testsuites.Testsuits Web.Create Account.Account Testsuite Testbed</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

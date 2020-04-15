@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec name="web_apps.web_functions" type="library" format="ROBOT" generated="20200415 11:41:44">
+<version></version>
+<scope>global</scope>
+<namedargs>yes</namedargs>
+<doc>Documentation for library ``web_apps.web_functions``.</doc>
+<kw name="Add New Project Dash Board Page">
+<arguments>
+<arg>projectName</arg>
+<arg>projectDescription</arg>
+</arguments>
+<doc>add project in dash board page</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Click Cancel Project Button Dash Board Page">
+<arguments>
+</arguments>
+<doc>click cancel create project button in dash board page</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Click Create Account Button">
+<arguments>
+</arguments>
+<doc>click create account button in login page</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Click Create Project Button Dash Board Page">
+<arguments>
+</arguments>
+<doc>click create project button in dash board page</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Click Login Button">
+<arguments>
+</arguments>
+<doc>click login button</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Click New Project Button Dash Board Page">
+<arguments>
+</arguments>
+<doc>click new project button in dash board page</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Click Register Button Create Account Page">
+<arguments>
+</arguments>
+<doc>click register button in create account page</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Close Browser">
+<arguments>
+</arguments>
+<doc>Close web browser
+
+The __init__ method may be documented in either the class level
+docstring, or as a docstring on the __init__ method itself.
+
+Either form is acceptable, but the two should not be mixed. Choose one
+convention to document the __init__ method and be consistent with it.
+
+Note:
+    Do not include the `self` parameter in the ``Args`` section.
+
+Args:  
+    url (str): Link to website</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Input All Infomation Create Account Page">
+<arguments>
+<arg>username</arg>
+<arg>email</arg>
+<arg>fullname</arg>
+<arg>password</arg>
+<arg>confirmPassword</arg>
+</arguments>
+<doc>input all infomation in creare account page</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Input Project Description Dash Board Page">
+<arguments>
+<arg>projectDescription</arg>
+</arguments>
+<doc>input project description in dash board page</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Input Project Name Dash Board Page">
+<arguments>
+<arg>projectName</arg>
+</arguments>
+<doc>input project name in dash board page</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Input Username Password Login Page">
+<arguments>
+<arg>username</arg>
+<arg>password</arg>
+</arguments>
+<doc>input username and password in login page</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Nav To Create Account Page">
+<arguments>
+</arguments>
+<doc>navigate to creare account page</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Open Browser">
+<arguments>
+<arg>url</arg>
+</arguments>
+<doc>Launch web browser with ATDA server info
+
+The __init__ method may be documented in either the class level
+docstring, or as a docstring on the __init__ method itself.
+
+Either form is acceptable, but the two should not be mixed. Choose one
+convention to document the __init__ method and be consistent with it.
+
+Note:
+    Do not include the `self` parameter in the ``Args`` section.
+
+Args:  
+    url (str): Link to website</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Resister New Account">
+<arguments>
+<arg>username</arg>
+<arg>email</arg>
+<arg>fullname</arg>
+<arg>password</arg>
+<arg>confirmPassword</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+</keywordspec>
