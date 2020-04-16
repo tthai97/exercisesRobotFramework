@@ -4,8 +4,10 @@ Created on Apr 7, 2020
 @author: tthai
 '''
 from robot.api import logger
+import time
 
 from selenium.webdriver.common.by import By
+from pip._internal import self_outdated_check
 
 class dash_board_page(object):
     '''
@@ -33,6 +35,7 @@ class dash_board_page(object):
         self.PROJECT_DESCRIPTION_TXT ="textarea.form-control"
         self.CREATE_PROJECT_BTN = "div.modal-footer > button.btn.btn-primary"
         self.CANCEL_PROJECT_BTN = "div.modal-footer > button.btn.btn-secondary"
+        self.PROJECT_NAME_INVALID = "input.is-invalid.form-control"                #Use for invalid value in add new project
         
         
         self.HAVE_ACCOUNT_HREF = "a.auth-link"        #CSS SELECTOR
@@ -45,6 +48,31 @@ class dash_board_page(object):
         self.PLEASE_ENTER_CONFIRM_PASSWORD = "//div[contains(text(), 'confirmPassword')]"        #XPATH
         
         
+    def loading_avatar_page(self, driver, timeOut):
+        i = 0;
+        while i < int(timeOut):
+            time.sleep(1)
+            i = i + 1
+            avatar_ele = driver.find_elements(By.CSS_SELECTOR, self.AVARVAR_IMG)
+            if not avatar_ele:
+                print("Loading avatar page failse")
+            else:
+                print("Loading avatar page successfully")
+                return True
+        return False        
+    
+    def is_Project_name_invalid(self, driver, timeOut):
+        projectNameInvalid_ele = driver.find_elements(By.CSS_SELECTOR, self.PROJECT_NAME_INVALID)
+        i = 0;
+        while i < timeOut:
+            time.sleep(1)
+            i = i + 1
+            if not projectNameInvalid_ele:
+                print("Project name is OK")
+                return True
+            else:
+                print("Project name is invalid")
+        return False      
     
     def input_project_name(self, driver, projectName):
         element = driver.find_element(By.CSS_SELECTOR, self.PROJECT_NAME_TXT)
@@ -61,6 +89,16 @@ class dash_board_page(object):
         element.click()
         logger.info("click new project button successfully")
         
+    def is_project_name_empty(self, driver):
+        element = driver.find_element(By.CSS_SELECTOR, self.PROJECT_NAME_TXT)
+        projectNameValue = element.get_attribute("value").strip()
+        if  projectNameValue == "":
+            print("project name is empty!")
+            return True
+        else:
+            print("project name has value: " + projectNameValue)
+            return False
+    
     def click_create_project_button(self, driver):
         element = driver.find_element(By.CSS_SELECTOR, self.CREATE_PROJECT_BTN)
         element.click()

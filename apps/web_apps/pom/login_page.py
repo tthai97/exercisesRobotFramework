@@ -22,6 +22,19 @@ class login_page():
         self.INVALID_PASSWORD_TXT ="//div[@class='mb-4 input-group']//div[@class='help-block invalid-feedback']" 
         self.INVALID_USERNAME_PASSWORD_TXT ="//*[text()='Username or Password invalid']"   
   
+    def loading_login_page(self, driver, timeOut):
+        login_ele = self.driver.find_element(By.CSS_SELECTOR, self.USERNAME_TF)
+        i = 0;
+        while i < timeOut:
+            time.sleep(1)
+            i = i + 1
+            if avatar_ele.size() > 0:
+                print("Loading avatar page successfully")
+                return True
+            else:
+                print("Loading avatar page failse")
+        return False        
+    
     def input_username_login(self, driver, username):
         element = driver.find_element(By.CSS_SELECTOR, self.USERNAME_TF)
         element.send_keys(username)

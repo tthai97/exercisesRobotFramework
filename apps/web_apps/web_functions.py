@@ -51,7 +51,7 @@ class web_functions(object):
             desired_capabilities: - A dictionary of capabilities to request when
              starting the browser session. Required parameter.
             command_executor: - Either a string representing URL of the remote server or a custom
-             remote_connection.RemoteConnection object. Defaults to 'http://127.0.0.1:4444/wd/hub'.
+             remote_connection.RemoteConnection object. Defaults to 'http://127.0.0.1:4444/wd/hub'.s
 
         """
         print('*INFO:%d* init atda_web instance')
@@ -61,11 +61,32 @@ class web_functions(object):
         self.desired_capabilities = CHROME
         self.command_executor = command_executor
  
-    def nav_to_create_account_page(self):
-        '''navigate to creare account page'''
+#     def nav_to_create_account_page(self):
+#         '''navigate to creare account page'''
+#         logger.info("start function navigate to create account page")
+#         return create_account_page()
+
+    def nav_to_dash_board_page(self, timeOut):
+        '''navigate to dash board page'''
         logger.info("start function navigate to create account page")
-        return create_account_page()
- 
+        if dash_board_page().loading_avatar_page(self.driver, timeOut):
+            print ("navigate to dash board page successfull")
+            return True
+        print ("navigate to dash board page false")
+        return False
+    
+    def is_project_name_invalid(self):
+        if dash_board_page().is_Project_name_invalid(self.driver, 2):
+            print("you must be enter project name")
+        else:
+            print("project nam is acceptable")
+    
+    def is_project_name_exist(self):
+        if dash_board_page().is_Project_name_invalid(self.driver, 2) == True and dash_board_page().is_project_name_empty(self.driver) == False:
+            print("your project name already exist!")
+        else:
+            print("maybe your project name is empty!")
+    
     def input_all_infomation_create_account_page(self, username, email, fullname, password, confirmPassword):
         '''input all infomation in creare account page'''
         create_account_page().input_username_create_page(self.driver, username)
