@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.7.3 on win32)" generated="20200416 14:03:49.649" rpa="false">
+<robot generator="Robot 3.1.2 (Python 3.7.3 on win32)" generated="20200417 11:39:13.233" rpa="false">
 <suite id="s1" name="DemoRobotFramework01" source="D:\HAI\Download\generalrobotframework-master\generalrobotframework-master\DemoRobotFramework01">
 <suite id="s1-s1" name="Testsuites" source="D:\HAI\Download\generalrobotframework-master\generalrobotframework-master\DemoRobotFramework01\testsuites">
 <suite id="s1-s1-s1" name="Testsuits Web" source="D:\HAI\Download\generalrobotframework-master\generalrobotframework-master\DemoRobotFramework01\testsuites\testsuits_web">
@@ -11,15 +11,15 @@
 <arguments>
 <arg>Hello</arg>
 </arguments>
-<status status="PASS" starttime="20200416 14:03:50.142" endtime="20200416 14:03:50.143"></status>
+<status status="PASS" starttime="20200417 11:39:13.785" endtime="20200417 11:39:13.786"></status>
 </kw>
 <kw name="Open Browser" library="browser_01">
 <doc>Launch web browser with ATDA server info</doc>
 <arguments>
 <arg>http://11.11.7.10/login</arg>
 </arguments>
-<msg timestamp="20200416 14:03:50.143" level="INFO">Creating driver for non Web app: ANY</msg>
-<status status="PASS" starttime="20200416 14:03:50.143" endtime="20200416 14:03:54.378"></status>
+<msg timestamp="20200417 11:39:13.786" level="INFO">Creating driver for non Web app: ANY</msg>
+<status status="PASS" starttime="20200417 11:39:13.786" endtime="20200417 11:39:17.080"></status>
 </kw>
 <kw name="Input Username Password Login Page" library="browser_01">
 <doc>input username and password in login page</doc>
@@ -27,85 +27,85 @@
 <arg>hai</arg>
 <arg>hai</arg>
 </arguments>
-<msg timestamp="20200416 14:03:54.472" level="INFO">input username in login page successfully</msg>
-<msg timestamp="20200416 14:03:54.576" level="INFO">input password successfully</msg>
-<status status="PASS" starttime="20200416 14:03:54.379" endtime="20200416 14:03:54.576"></status>
+<msg timestamp="20200417 11:39:17.188" level="INFO">input username in login page successfully</msg>
+<msg timestamp="20200417 11:39:17.292" level="INFO">input password successfully</msg>
+<status status="PASS" starttime="20200417 11:39:17.080" endtime="20200417 11:39:17.292"></status>
 </kw>
 <kw name="Click Login Button" library="browser_01">
 <doc>click login button</doc>
-<msg timestamp="20200416 14:03:54.577" level="INFO">start function navigate to create account page</msg>
-<msg timestamp="20200416 14:03:54.645" level="INFO">click login button successfully</msg>
-<status status="PASS" starttime="20200416 14:03:54.577" endtime="20200416 14:03:54.645"></status>
+<msg timestamp="20200417 11:39:17.293" level="INFO">start function navigate to create account page</msg>
+<msg timestamp="20200417 11:39:17.372" level="INFO">click login button successfully</msg>
+<status status="PASS" starttime="20200417 11:39:17.293" endtime="20200417 11:39:17.372"></status>
 </kw>
 <kw name="Nav To Dash Board Page" library="browser_01">
 <doc>navigate to dash board page</doc>
 <arguments>
 <arg>5</arg>
 </arguments>
-<msg timestamp="20200416 14:03:54.646" level="INFO">start function navigate to create account page</msg>
-<msg timestamp="20200416 14:03:55.666" level="INFO">Loading avatar page successfully
+<msg timestamp="20200417 11:39:17.372" level="INFO">start function navigate to create account page</msg>
+<msg timestamp="20200417 11:39:18.438" level="INFO">Loading avatar page successfully
 navigate to dash board page successfull</msg>
-<status status="PASS" starttime="20200416 14:03:54.645" endtime="20200416 14:03:55.666"></status>
+<status status="PASS" starttime="20200417 11:39:17.372" endtime="20200417 11:39:18.439"></status>
 </kw>
 <kw name="Click New Project Button Dash Board Page" library="browser_01">
 <doc>click new project button in dash board page</doc>
-<msg timestamp="20200416 14:03:55.667" level="INFO">start function click new button in dash board page</msg>
-<msg timestamp="20200416 14:03:55.763" level="INFO">click new project button successfully</msg>
-<status status="PASS" starttime="20200416 14:03:55.667" endtime="20200416 14:03:55.763"></status>
+<msg timestamp="20200417 11:39:18.440" level="INFO">start function click new button in dash board page</msg>
+<msg timestamp="20200417 11:39:18.608" level="INFO">click new project button successfully</msg>
+<status status="PASS" starttime="20200417 11:39:18.439" endtime="20200417 11:39:18.608"></status>
 </kw>
 <kw name="Click Create Project Button Dash Board Page" library="browser_01">
 <doc>click create project button in dash board page</doc>
-<msg timestamp="20200416 14:03:55.763" level="INFO">start function click create button in dash board page</msg>
-<msg timestamp="20200416 14:03:55.826" level="INFO">click create project button successfully</msg>
-<status status="PASS" starttime="20200416 14:03:55.763" endtime="20200416 14:03:55.826"></status>
+<msg timestamp="20200417 11:39:18.609" level="INFO">start function click create button in dash board page</msg>
+<msg timestamp="20200417 11:39:18.690" level="INFO">click create project button successfully</msg>
+<status status="PASS" starttime="20200417 11:39:18.608" endtime="20200417 11:39:18.690"></status>
 </kw>
 <kw name="Input Project Name Dash Board Page" library="browser_01">
 <doc>input project name in dash board page</doc>
 <arguments>
 <arg>hai</arg>
 </arguments>
-<msg timestamp="20200416 14:03:55.827" level="INFO">start function input project name in dash board page</msg>
-<msg timestamp="20200416 14:03:55.907" level="INFO">input project name successfully</msg>
-<status status="PASS" starttime="20200416 14:03:55.826" endtime="20200416 14:03:55.908"></status>
+<msg timestamp="20200417 11:39:18.691" level="INFO">start function input project name in dash board page</msg>
+<msg timestamp="20200417 11:39:18.787" level="INFO">input project name successfully</msg>
+<status status="PASS" starttime="20200417 11:39:18.690" endtime="20200417 11:39:18.787"></status>
 </kw>
 <kw name="Input Project Description Dash Board Page" library="browser_01">
 <doc>input project description in dash board page</doc>
 <arguments>
 <arg>hai</arg>
 </arguments>
-<msg timestamp="20200416 14:03:55.908" level="INFO">start function input project description in dash board page</msg>
-<msg timestamp="20200416 14:03:55.976" level="INFO">input project description successfully</msg>
-<status status="PASS" starttime="20200416 14:03:55.908" endtime="20200416 14:03:55.977"></status>
+<msg timestamp="20200417 11:39:18.788" level="INFO">start function input project description in dash board page</msg>
+<msg timestamp="20200417 11:39:18.876" level="INFO">input project description successfully</msg>
+<status status="PASS" starttime="20200417 11:39:18.787" endtime="20200417 11:39:18.876"></status>
 </kw>
 <kw name="Click Create Project Button Dash Board Page" library="browser_01">
 <doc>click create project button in dash board page</doc>
-<msg timestamp="20200416 14:03:55.977" level="INFO">start function click create button in dash board page</msg>
-<msg timestamp="20200416 14:03:56.028" level="INFO">click create project button successfully</msg>
-<status status="PASS" starttime="20200416 14:03:55.977" endtime="20200416 14:03:56.028"></status>
+<msg timestamp="20200417 11:39:18.877" level="INFO">start function click create button in dash board page</msg>
+<msg timestamp="20200417 11:39:18.954" level="INFO">click create project button successfully</msg>
+<status status="PASS" starttime="20200417 11:39:18.876" endtime="20200417 11:39:18.954"></status>
 </kw>
 <kw name="Is Project Name Exist" library="browser_01">
-<msg timestamp="20200416 14:03:57.075" level="INFO">Project name is OK
+<msg timestamp="20200417 11:39:20.016" level="INFO">Project name is OK
 project name has value: hai
 your project name already exist!</msg>
-<status status="PASS" starttime="20200416 14:03:56.028" endtime="20200416 14:03:57.075"></status>
+<status status="PASS" starttime="20200417 11:39:18.955" endtime="20200417 11:39:20.016"></status>
 </kw>
 <kw name="Close Browser" library="browser_01">
 <doc>Close web browser</doc>
-<msg timestamp="20200416 14:03:57.076" level="INFO">Start function close_browser</msg>
-<msg timestamp="20200416 14:03:57.303" level="INFO">close_browser successfully</msg>
-<status status="PASS" starttime="20200416 14:03:57.075" endtime="20200416 14:03:57.303"></status>
+<msg timestamp="20200417 11:39:20.016" level="INFO">Start function close_browser</msg>
+<msg timestamp="20200417 11:39:20.072" level="INFO">close_browser successfully</msg>
+<status status="PASS" starttime="20200417 11:39:20.016" endtime="20200417 11:39:20.074"></status>
 </kw>
-<status status="PASS" starttime="20200416 14:03:50.141" endtime="20200416 14:03:57.303" critical="yes"></status>
+<status status="PASS" starttime="20200417 11:39:13.784" endtime="20200417 11:39:20.074" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20200416 14:03:49.722" endtime="20200416 14:03:57.304"></status>
+<status status="PASS" starttime="20200417 11:39:13.293" endtime="20200417 11:39:20.075"></status>
 </suite>
-<status status="PASS" starttime="20200416 14:03:49.720" endtime="20200416 14:03:57.306"></status>
+<status status="PASS" starttime="20200417 11:39:13.291" endtime="20200417 11:39:20.077"></status>
 </suite>
-<status status="PASS" starttime="20200416 14:03:49.718" endtime="20200416 14:03:57.307"></status>
+<status status="PASS" starttime="20200417 11:39:13.289" endtime="20200417 11:39:20.078"></status>
 </suite>
-<status status="PASS" starttime="20200416 14:03:49.716" endtime="20200416 14:03:57.308"></status>
+<status status="PASS" starttime="20200417 11:39:13.287" endtime="20200417 11:39:20.082"></status>
 </suite>
-<status status="PASS" starttime="20200416 14:03:49.681" endtime="20200416 14:03:57.310"></status>
+<status status="PASS" starttime="20200417 11:39:13.266" endtime="20200417 11:39:20.085"></status>
 </suite>
 <statistics>
 <total>

@@ -20,6 +20,7 @@ from utils.grid_manager.grid_driver_factory import grid_driver_factory
 from web_apps.pom.login_page import login_page
 from web_apps.pom.create_account_page import create_account_page
 from web_apps.pom.dash_board_page import dash_board_page
+from web_apps.public_function import public_function
 
 __version__ = '0.0.0.1'
 
@@ -86,7 +87,7 @@ class web_functions(object):
             print("your project name already exist!")
         else:
             print("maybe your project name is empty!")
-    
+            
     def input_all_infomation_create_account_page(self, username, email, fullname, password, confirmPassword):
         '''input all infomation in creare account page'''
         create_account_page().input_username_create_page(self.driver, username)

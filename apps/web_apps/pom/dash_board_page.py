@@ -5,7 +5,6 @@ Created on Apr 7, 2020
 '''
 from robot.api import logger
 import time
-
 from selenium.webdriver.common.by import By
 from pip._internal import self_outdated_check
 
